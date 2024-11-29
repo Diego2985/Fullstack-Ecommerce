@@ -1,0 +1,18 @@
+.item {
+    width: 350px;
+    
+}
+.item img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.item p{
+    margin: 6px 0px;
+}
+
+.item-prices{
+    display: flex;
+    gap: 20px;
+}

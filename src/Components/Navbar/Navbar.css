@@ -1,0 +1,113 @@
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 16px;
+    box-shadow: 0 1px 3px -2px black;
+    transition: background-color 0.3s ease;;
+    
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    height: 100px;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 50px;
+    color: #626262;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* Estilo para el navbar en modo claro */
+.nav-menu.light li a {
+    color: violet;
+  }
+  
+  .nav-menu.dark li a {
+    color: white;
+  }
+ 
+.nav-menu li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    cursor: pointer;
+}
+
+.nav-menu hr{
+    border: none;
+    width: 80%;
+    height: 3px;
+    border-radius: 10px;
+    background: #ff4141;
+}
+
+.nav-login-cart{
+    position: relative; /* Punto de referencia para posicionar el contador */
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-login-cart button {
+    width: 157px;
+    height: 58px;
+    outline: none;
+    border: 1px solid #7a7a7a;
+    border-radius: 75px;
+    color: #515151;
+    font-size: 20px;
+    font-weight: 500;
+    background: white;
+    cursor: pointer;
+}
+
+.cart-container {
+    position: relative; /* Punto de referencia para el contador */
+    display: inline-block; /* Asegura que el contenedor sea manejable */
+}
+
+.cart_icon {
+    width: 24px;
+    height: 24px;
+    transition: filter 0.3s ease;
+
+}
+
+.cart_icon.light {
+    filter: none;
+  }
+
+.cart_icon.dark {
+    filter: invert(1);
+  }  
+
+.nav-login-cart button:active {
+    background: #f3f3f3;
+}
+
+.nav-cart-count {
+    position: absolute; /* Posiciona relativo al contenedor */
+    top: -5px; /* Ajusta hacia arriba */
+    right: -5px; /* Ajusta hacia la derecha */
+    width: 18px; /* Tamaño más pequeño si es necesario */
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%; /* Hace que sea redondo */
+    font-size: 10px; /* Tamaño de fuente menor */
+    background: red; /* Color de fondo */
+    color: white; /* Color del texto */
+    font-weight: bold;
+}

@@ -1,3 +1,6 @@
+*{
+  margin: 0;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +8,88 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: 'poppins';
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* Tema claro  */
+body.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.navbar.light {
+  background-color: #f8f9fa;
+}
+
+.login-btn.light,
+.theme-toggle.light {
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #000000;
+}
+
+
+
+/* Tema oscuro  */
+body.dark {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.navbar.dark {
+  background-color: #333333;
+}
+
+.theme-switch-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.theme-switch-checkbox {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.theme-switch {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+.theme-switch:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  border-radius: 50px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+}
+
+.theme-switch-checkbox:checked + .theme-switch {
+  background-color: #4CAF50;
+}
+
+.theme-switch-checkbox:checked + .theme-switch:before {
+  transform: translateX(26px);
+}
+
+.theme-switch-checkbox:checked + .theme-switch + .theme-switch-label {
+  background-color: #4CAF50;
 }

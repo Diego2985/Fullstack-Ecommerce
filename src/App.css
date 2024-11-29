@@ -35,4 +35,19 @@
   to {
     transform: rotate(360deg);
   }
+  
+}
+
+
+
+
+
+body.light {
+  background-color: #fff;
+  color: #000;
+}
+
+body.dark {
+  background-color: #333;
+  color: #fff;
 }

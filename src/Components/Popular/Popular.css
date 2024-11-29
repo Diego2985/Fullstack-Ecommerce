@@ -1,0 +1,49 @@
+.popular{
+    display: flex;
+    margin-top: 0; /* Reduce el espacio entre Hero y Popular */
+    padding: 20px; /* Ajusta el relleno interno */
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    height: 90vh;
+  
+}
+
+.popular h1{
+    color: #171717;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+/* Tema claro */
+.popular.light h1 {
+    color: black; /* Color del texto en tema claro */
+  }
+  
+  /* Tema oscuro */
+  .popular.dark h1 {
+    color: white; /* Color del texto en tema oscuro */
+  }
+
+.popular hr{
+    width: 200px;
+    height: 6px;
+    border-radius: 10px;
+    
+}
+
+/* Tema claro */
+.popular.light hr {
+    background: black; /* Color del texto en tema claro */
+  }
+  
+  /* Tema oscuro */
+  .popular.dark hr {
+    background: white; /* Color del texto en tema oscuro */
+  }
+
+.popular-item{
+    margin-top: 50px;
+    display: flex;
+    gap: 30px;
+}

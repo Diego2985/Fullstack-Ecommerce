@@ -1,0 +1,65 @@
+.hero {
+  height: 74vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  background-image: url('../Assets/img/image_hero.webp');
+  background-size: 45% 100%; /* La imagen ocupará el 70% del ancho */
+  background-repeat: no-repeat;
+  background-position: right center;
+  color: #090909;
+  padding: 50px;
+}
+
+.hero-content {
+  max-width: 30%; /* Define un ancho para el contenido */
+}
+
+/* Estilos para el texto en el tema claro */
+.hero.light .hero-title,
+.hero.light .hero-text {
+  color: black; /* Texto negro en el modo claro */
+}
+
+/* Estilos para el texto en el tema oscuro */
+.hero.dark .hero-title,
+.hero.dark .hero-text {
+  color: white; /* Texto blanco en el modo oscuro */
+}
+
+.hero-left h2{
+    font-size: 42px;
+    font-weight: 800;
+    margin: 0;
+    color: #090909;
+}
+
+.hero-icon p{     
+    font-size: 37px;
+    font-weight: 900;
+    margin: 30px 0;
+    color: #171717;
+    
+}
+
+.hero-latest-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 310px;
+    height: 70px;
+    border-radius: 35px;
+    margin-top: 20px;
+    background: #ff4141;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.hero-latest-btn img{
+    width: 20px;
+    height: 20px;
+}
