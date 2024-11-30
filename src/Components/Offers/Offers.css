@@ -1,0 +1,72 @@
+.offers{
+    width: 100px;
+    height: 20vh;
+    display: flex;
+    margin: auto;
+    padding: 0px 100px;
+    margin-bottom: 150px;    
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente el contenido */
+}
+.offers-left{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Centra horizontalmente el contenido de la izquierda */
+    text-align: center; /* Asegura que el texto esté centrado */
+}
+.offers-left h1{
+    color: #171717;
+    font-size: 50px;
+    font-weight: 600;
+}
+.offers-left p{
+    color: #171717;
+    font-size: 22px;
+    font-weight: 600;   
+    margin-top: 10px; /* Añade espacio entre el título y el párrafo */ 
+}
+.offers-left button{
+    width: 282px;
+    height: 70px;
+    border-radius: 35px;
+    background: #ff4141;
+    border: none;
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.offers-right{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.offers-right img{
+   width: 600px;
+   height: 400px;
+   
+}
+/* Tema claro */
+.offers.light h1 {
+    color: black; /* Color del texto en tema claro */
+  }
+  
+  /* Tema oscuro */
+  .offers.dark h1 {
+    color: white; /* Color del texto en tema oscuro */
+  }
+
+  .offers.light p {
+    color: black; /* Color del texto en tema claro */
+  }
+  
+  /* Tema oscuro */
+  .offers.dark p {
+    color: white; /* Color del texto en tema oscuro */
+  }

@@ -1,7 +1,7 @@
 import p13_img from "../img/product_13.jpg";
-import p16_img from "../img/product_16.jpg";
+import p15_img from "../img/product_15.jpg";
 import p35_img from "../img/product_35.jpg";
-import p45_img from "../img/product_45.jpg";
+import p44_img from "../img/product_44.jpg";
 
 const data_product = [
     {
@@ -12,11 +12,11 @@ const data_product = [
         price: 18000.00,
     },
     {
-        id: 16,
-        name: "Pantalon aeronautico",
+        id: 15,
+        name:"Pantalones deportivo",
         category: "mujer",
-        image: p16_img,
-        price: 32000.0,
+        image: p15_img,
+        price: 39000.00,
     },
     {
         id: 35,
@@ -26,11 +26,11 @@ const data_product = [
         price: 54000.00,
     },
     {
-        id: 45,
-        name:"Zapato Vizzano Taco alto",
+        id: 44,
+        name:"Sandalia Lady Comfort verano ",
         category: "mujer",
-        image: p45_img,
-        price: 59000.00,
+        image: p44_img,
+        price: 30000.00,
     },
 ];
 

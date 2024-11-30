@@ -47,3 +47,10 @@
     display: flex;
     gap: 30px;
 }
+
+.popular-item img {
+  width: 500px; /* Ajusta según el tamaño deseado */
+  height: 500px; /* Ajusta según el tamaño deseado */
+  object-fit: cover; /* Asegura que la imagen se recorte para llenar el espacio */
+  border-radius: 10px; /* Opcional: para esquinas redondeadas */
+}
