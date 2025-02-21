@@ -59,8 +59,6 @@ import p58_img from "../img/product_58.jpg";
 import p59_img from "../img/product_59.jpg";
 import p60_img from "../img/product_60.jpg";
 
-
-
 export const products = [
     {
         id: 1,

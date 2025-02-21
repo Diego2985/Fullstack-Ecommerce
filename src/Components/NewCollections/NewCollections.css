@@ -1,0 +1,56 @@
+.new-collections{
+    display: flex;
+    margin-top: 0; /* Reduce el espacio entre Hero y new-collections */
+    padding: 20px; /* Ajusta el relleno interno */
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    height: 90vh;
+  
+}
+
+.new-collections h1{
+    color: #171717;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+/* Tema claro */
+.new-collections.light h1 {
+    color: black; /* Color del texto en tema claro */
+  }
+  
+  /* Tema oscuro */
+  .new-collections.dark h1 {
+    color: white; /* Color del texto en tema oscuro */
+  }
+
+.new-collections hr{
+    width: 200px;
+    height: 6px;
+    border-radius: 10px;
+    
+}
+
+/* Tema claro */
+.new-collections.light hr {
+    background: black; /* Color del texto en tema claro */
+  }
+  
+  /* Tema oscuro */
+  .new-collections.dark hr {
+    background: white; /* Color del texto en tema oscuro */
+  }
+
+
+.collections {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 50px;
+}  
+.collections img{
+  width: 200px; /* Ajusta según el tamaño deseado */
+  height: 200px; /* Ajusta según el tamaño deseado */
+  object-fit: cover; /* Asegura que la imagen se recorte para llenar el espacio */
+  border-radius: 10px; /* Opcional: para esquinas redondeadas */
+}

@@ -1,0 +1,109 @@
+/* Tema claro */
+.newsletter.light{
+    width: 65%;
+    height: 40vh;
+    display: flex;
+    margin: auto;
+    padding: 0px 140px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 150px;
+    background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
+      
+}
+
+.newsletter h1{
+    color: #454545;
+    font-size: 55px;
+    font-weight: 600;
+}
+.newsletter p{
+    color: #454545;
+    font-size: 20px;
+}
+.newsletter div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    width: 730px;
+    height: 70px;
+    border-radius: 80px;
+    border: 1px solid #e3e3e3;
+}
+
+.newsletter input{
+    width: 500px;
+    margin-left: 30px;
+    border: none;
+    outline: none;
+    color: #616161;
+    font-family: Poppins;
+    font-size: 16px;
+}
+
+.newsletter div button{
+    width: 210px;
+    height: 70px;
+    border-radius: 80px;
+    background: black;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Tema dark */
+.newsletter.dark{
+    width: 65%;
+    height: 40vh;
+    display: flex;
+    margin: auto;
+    padding: 0px 140px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 150px;
+    background: linear-gradient(180deg, #8d55a3 0%, #333333 60%);
+      
+}
+  
+  /* Tema oscuro */
+.newsletter.dark h1 {
+    color: white; /* Color del texto en tema oscuro */
+}
+.newsletter.dark p {
+    color: white; /* Color del texto en tema oscuro */
+}
+.newsletter.dark div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #333333;
+    width: 730px;
+    height: 70px;
+    border-radius: 80px;
+    border: 1px solid #e3e3e3;
+}
+.newsletter.dark input{
+    width: 500px;
+    margin-left: 30px;
+    border: none;
+    outline: none;
+    color: white;
+    font-family: Poppins;
+    font-size: 16px;
+    background-color: #333333;
+}
+.newsletter.dark div button{
+    width: 210px;
+    height: 70px;
+    border-radius: 80px;
+    background: white;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+}  
+

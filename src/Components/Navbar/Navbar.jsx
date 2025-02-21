@@ -9,6 +9,7 @@ const Navbar = ({ theme, toggleTheme}) => {
   const [menu,setMenu] = useState("shop");  
 
   return (
+   
     <div className={`navbar ${theme}`}>
        <div className="nav-logo">
          <img className="logo" src={logo} alt="Logo" />
@@ -16,7 +17,7 @@ const Navbar = ({ theme, toggleTheme}) => {
        <ul className={`nav-menu ${theme}`}>
   <li onClick={() => setMenu("shop")}>
     <Link style={{ textDecoration: "none" }} to="/">
-      Shop
+      Tienda
     </Link>
     {menu === "shop" ? <hr /> : null}
   </li>
@@ -35,7 +36,7 @@ const Navbar = ({ theme, toggleTheme}) => {
 </ul>
        <div className='nav-login-cart'>
          <Link to='/login'>
-           <button className={`login-btn ${theme}`}>Login</button>
+           <button className={`login-btn ${theme}`}>Acceder</button>
          </Link>
          <Link to='/cart' className="cart-container">
            <img className={`cart_icon ${theme}`} 
@@ -52,6 +53,7 @@ const Navbar = ({ theme, toggleTheme}) => {
          
        </div>
     </div>
+    
   )
 }
 
