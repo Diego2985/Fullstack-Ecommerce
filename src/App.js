@@ -1,5 +1,9 @@
-import {useState} from 'react';
+import {useState, useEffect} from 'react';
 import './App.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+
 import Navbar from './Components/Navbar/Navbar';
 import { BrowserRouter, Routes, Route} from 'react-router-dom'
 import ShopCategory from './Pages/ShopCategory';
@@ -12,7 +16,15 @@ import men_banner from './Components/Assets/img/men_banner.png'
 import women_banner from './Components/Assets/img/women_banner.png'
 
 
+
 function App() {
+
+  useEffect(() => {
+    AOS.init({
+      once: true,
+    });
+  }, []);
+
   const [theme, setTheme] = useState('light'); // Agregar estado para el tema
 
   // Función para alternar el tema
@@ -32,8 +44,8 @@ function App() {
          <Route path='/' element={<Shop theme={theme}/>}/>
          <Route path='/mens' element={<ShopCategory banner={men_banner} category="men"/>}/>
          <Route path='/womens' element={<ShopCategory banner={women_banner} category="women"/>}/>
-         <Route path="/product" element={<Product/>}>
-               <Route path=':productId' element={<Product/>}/>
+         <Route path="/product/:productId" element={<Product/>}>
+               
          </Route>          
          <Route path='/cart' element={<Cart/>}/>
          <Route path='/login' element={<LoginSignup theme={theme}/>}/>

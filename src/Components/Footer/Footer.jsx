@@ -1,13 +1,21 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Footer.css'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
 import footer_logo from '../Assets/img/logo.png'
 import facebook_icon from '../Assets/img/facebook.png'
 import instagram_icon from '../Assets/img/instagram.png'
 import whatsapp_icon from '../Assets/img/whatsapp.png'
 
 const Footer = ({theme}) => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000});
+  }, []);
+
   return (
-    <div className={`footer ${theme}`}>
+    <div className={`footer ${theme}`} data-aos="fade-up">
       <div className="footer-logo">
         <img src={footer_logo} alt="" />
       </div>
@@ -31,7 +39,7 @@ const Footer = ({theme}) => {
       </div>
       <div className="footer-copyright">
         <hr />
-        <p>Copyright @ 2024 - Todo los derechos reservados</p>
+        <p>© {new Date().getFullYear()} JD Studio Web. Todo los derechos reservados</p>
       </div>
     </div>
   )

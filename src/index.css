@@ -96,12 +96,16 @@ body.dark {
 .theme-switch-checkbox:checked + .theme-switch + .theme-switch-label {
   background-color: #4CAF50;
 }
-
-
   
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }

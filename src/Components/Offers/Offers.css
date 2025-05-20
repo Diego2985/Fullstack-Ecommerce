@@ -1,33 +1,39 @@
-.offers{
-    width: 100px;
-    height: 20vh;
+.offers {
+    width: 100%;
+    min-height: 60vh;
     display: flex;
     margin: auto;
     padding: 0px 100px;
-    margin-bottom: 150px;    
-    align-items: center; /* Centra verticalmente */
-    justify-content: center; /* Centra horizontalmente el contenido */
+    margin-bottom: 150px;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
 }
-.offers-left{
+
+.offers-left {
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; /* Centra horizontalmente el contenido de la izquierda */
-    text-align: center; /* Asegura que el texto esté centrado */
+    text-align: left;
+    gap: 10px;
 }
-.offers-left h1{
-    color: #171717;
+
+.offers-left h1 {
     font-size: 50px;
     font-weight: 600;
-}
-.offers-left p{
     color: #171717;
-    font-size: 22px;
-    font-weight: 600;   
-    margin-top: 10px; /* Añade espacio entre el título y el párrafo */ 
 }
-.offers-left button{
+
+.offers-left p {
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 10px;
+    color: #171717;
+}
+
+.offers-left button {
     width: 282px;
     height: 70px;
     border-radius: 35px;
@@ -40,33 +46,109 @@
     cursor: pointer;
 }
 
-.offers-right{
+.offers-right {
     flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
-   
 }
-.offers-right img{
-   width: 600px;
-   height: 400px;
-   
-}
-/* Tema claro */
-.offers.light h1 {
-    color: black; /* Color del texto en tema claro */
-  }
-  
-  /* Tema oscuro */
-  .offers.dark h1 {
-    color: white; /* Color del texto en tema oscuro */
-  }
 
-  .offers.light p {
-    color: black; /* Color del texto en tema claro */
+.offers-right img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+/* Colores para temas */
+.offers.light h1,
+.offers.light p {
+    color: black;
+}
+
+.offers.dark h1,
+.offers.dark p {
+    color: white;
+}
+
+/* -------------------------- */
+/* 🔽 MEDIA QUERIES RESPONSIVE */
+/* -------------------------- */
+
+/* Tablets */
+@media (max-width: 1024px) {
+    .offers {
+        padding: 0 50px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .offers-left,
+    .offers-right {
+        width: 100%;
+        align-items: center;
+    }
+
+    .offers-left h1 {
+        font-size: 40px;
+    }
+
+    .offers-left p {
+        font-size: 18px;
+    }
+
+    .offers-left button {
+        width: 220px;
+        height: 60px;
+        font-size: 18px;
+    }
+}
+
+/* Móviles */
+@media (max-width: 768px) {
+    .offers {
+        padding: 0 20px;
+    }
+
+    .offers-left h1 {
+        font-size: 30px;
+    }
+
+    .offers-left p {
+        font-size: 16px;
+    }
+
+    .offers-left button {
+        width: 200px;
+        height: 55px;
+        font-size: 16px;
+    }
+
+    .offers-right img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* ✨ Animación de entrada */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
   }
-  
-  /* Tema oscuro */
-  .offers.dark p {
-    color: white; /* Color del texto en tema oscuro */
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
+}
+
+.offers-left,
+.offers-right {
+  animation: fadeInUp 1s ease forwards;
+}
+
+/* 🖱 Efecto hover para el botón */
+.offers-left button:hover {
+  background-color: #e63737;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}

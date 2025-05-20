@@ -17,7 +17,7 @@ const LoginSignup = ({ theme } ) => {
         <button type="submit">Continuar</button>
       </form>
         <p className="loginsignup-subtitle">No tenés una cuenta? <span>Acceder aqui</span> </p>
-        <div className="loginsingnup-agree">
+        <div className="loginsignup-agree">
           <input type="checkbox" name='' id='' />
           <p className="loginsignup-terms">Acepto los términos y condiciones</p>
         </div>
