@@ -1,7 +1,7 @@
 import React, { useEffect }from 'react';
 import './Hero.css';
 import arrow_icon from '../Assets/img/arrow.png';
-import hero_img from '../Assets/img/hero_image.png';
+import hero_img from '../Assets/img/hero_image.jpg';
 
 
 
